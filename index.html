@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Violet Store</title>
+    <!-- Main Css -->
+    <link rel="stylesheet" href="assets/css/main.css">
+    <!-- Fonts Awesome Library -->
+    <link rel="stylesheet" href="/assets/css/all.min.css">
+</head>
+<body>
+    <!-- Menu Icon (For Small Screens) -->
+    <div class="menu-icon" id="menuIcon">
+        <i class="fa-solid fa-bars"></i>
+    </div>
+
+    <!-- Mobile Menu Overlay -->
+    <div class="menu-overlay" id="menuOverlay" dir="rtl">
+        <div class="close" id="closeIcon">
+            <img src="assets/images/close-icon.png" alt="Close">
+        </div>
+        <ul >
+            <li><a href="/pages/log-in.html" id="logged-out">تسجيل الدخول</a></li>
+            <li><a href="#" id="logged-in" style="color: red;">تسجيل الخروج</a></li>
+            <li><a href="/pages/cap.html">كابات</a></li>
+            <li><a href="/pages/bag.html">شنط</a></li>
+            <li><a href="/pages/case.html">مقالم</a></li>
+            <li><a href="/pages/recycle.html">اعادة تدوير</a></li>
+        </ul>
+    </div>
+    
+    <nav id="nav">
+        <div><img src="assets/images/logo.png" alt="#" title="Home"></div>
+        <div class="right-nav">
+            <div><a href="#footer-section">تواصل معنا</a></div>
+            <div><a href="#new-section">اخر العروض</a></div>
+            <div class="services">
+                <a href="#services-section">خدماتنا</a>
+                <li dir="rtl">
+                    <ul><a href="/pages/bag.html" dir="rtl">شنط</a></ul>
+                    <ul><a href="/pages/cap.html" dir="rtl">كابات</a></ul>
+                    <ul><a href="/pages/case.html" dir="rtl">مقالم</a></ul>
+                    <ul><a href="/pages/recycle.html" dir="rtl">اعادة تدوير</a></ul>
+                </li>
+            </div>
+            <div class="my-account" id="my-account">
+                <a href="/pages/log-in.html" id="logged-out" class="my-account-btn" >حسابي</a>
+                <i class="fa-regular fa-user" style="margin-left: 10px;"></i>
+
+
+            </div>
+    </nav>
+    <section class="section" >
+        <div class="container">
+            <div><img src="/assets/images/logo.png" alt=""></div>
+            <div class="slogan">
+                <h2>✨Made with love for you✨</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat labore maxime temporibus ipsa sed consectetur alias quia earum voluptate magni reprehenderit omnis laboriosam est repellendus similique, odio, sunt error hic?</p>
+            </div>
+        </div>        
+    </section>
+    <section class="section" id="new-section">
+        <div class="new">
+            <h3 class="sh">اخر العروض</h3>
+            <div id="add-cont">
+            </div>
+        </div>        
+    </section>
+    <section  id="services-section" class="section">
+        <div class="new">
+            <h3 class="sh">خدماتنا</h3>
+            <div class="add-cont-2">
+                <div>
+                    <img src="/assets/images/testing.png" alt="">
+
+                        <a href="/pages/bag.html" class="service-a">شنط</a>
+                </div>
+                <div>
+                    <img src="/assets/images/testing.png" alt="">
+                    <a href="/pages/cap.html" class="service-a">كابات</a>
+                </div>
+                <div>
+                    <img src="/assets/images/testing.png" alt="">
+
+                    <a href="/pages/cap.html" class="service-a">اعادة تدوير</a>
+                </div>
+                <div class="service-maqlama" style="position: relative;">
+                    <img src="/assets/images/testing.png" alt="" >
+                    <a href="/pages/cases.html" class="service-a">مقالم</a>
+
+                </div>
+            </div>
+        </div>        
+    </section>
+    <section id="footer-section" class="section">
+        <footer>
+            <a href="">Facebook</a>
+            <a href="https://www.instagram.com/violett_store151/" target="_blank">Instagram</a>
+            <a href="#">Whatsapp</a>
+        </footer>
+    </section>
+    <script src="assets/js/main.js" type="module"></script>
+    <script src="/assets/js/firebase-config.js" type="module"></script>
+</body>
+</html>
+

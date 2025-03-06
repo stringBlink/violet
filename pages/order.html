@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ordedr Submition</title>
+    <link rel="stylesheet" href="/assets/css/order.css">
+</head>
+<body dir="rtl" >
+    <div class="container" id="order" >
+    <form action="" id="orderForm">
+        <label for="name">الاسم بالكامل</label>
+        <input type="text" id="name">
+        <label for="phone-1">رقم هاتف </label>
+        <input type="text" id="phone-1">
+        <label for="phone-2">رقم هاتف 2 ( اختياري )</label>
+        <input type="text" id="phone-2">
+        <label for="address">العنوان</label>
+        <input type="text" id="address">
+        <button type="submit">Submit</button>
+    </form>
+    </div>
+    <div class="container" id="order-submitted" style="display: none;">
+    <div class="cont" dir="rtl">
+        <h1 style="font-size: 60px;">تم تأكيد طلبك !</h1>
+        <h3 id="order-code">كود الاوردر : </h3>
+        <h4>سيتم التواصل خلال اسبوع</h4>
+        <h4>شكرا لاختياركم فيوليت ستور</h4>
+
+    </div>
+    </div>
+    <script src="/assets/js/firebase-config.js" type="module"></script>
+    <script type="module" src="/assets/js/order.js"></script>
+</body>
+
+
+</body>
+</html>

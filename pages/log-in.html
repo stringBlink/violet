@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>تسجيل الدخول</title>
+    <link rel="stylesheet" href="/assets/css/log-in-style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Log in</h1>
+        <form id="log-in-form">
+            <input type="email" placeholder="E-mail" required id="email" title="Please enter a valid email address">
+            <input type="password" placeholder="Password" id="password" required minlength="8" maxlength="20" title="Password must be between 8 and 20 characters">
+            <h3 id="invalid-credential" style="color: red;"></h3>
+            <a href="/pages/forget-pass.html">Forgot Password?</a>
+            <button type="submit" id="submit">Login</button> 
+        </form>
+        <p>Not a member? <a href="/pages/sign-up.html">Sign Up</a></p>
+    </div>
+
+    <script type="module" src="/assets/js/firebase-config.js" ></script>
+    <script type="module" src="/assets/js/log-in-script.js"></script>
+</body>
+</html>

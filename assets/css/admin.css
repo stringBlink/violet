@@ -1,0 +1,226 @@
+  @import url("https://fonts.googleapis.com/css2?family=Cairo:wght@200..1000&family=Caveat:wght@400..700&family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Jaini+Purva&display=swap");
+
+* {
+  font-family: "Cairo", serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+  height: auto;
+  background-color: #5f2db7;
+}
+nav img {
+  width: 60px;
+  height: 60px;
+  margin: 20px;
+  border-radius: 30px;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.5);
+}
+
+.under-nav {
+  margin: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+h1 {
+  font-weight: 800;
+}
+
+table {
+  width: 100vw;
+  height: auto;
+  background-color: #5f2db7;
+}
+
+tr {
+  display: flex;
+  justify-content: space-evenly;
+  padding: 20px;
+}
+.header {
+  background-color: white;
+}
+.buttons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 50px;
+}
+#add-item-button {
+  width: 100px;
+  font-weight: 800;
+  margin-left: 20px;
+}
+
+#remove-item-button {
+  width: 100px;
+  font-weight: 800;
+}
+
+button {
+  width: 60%;
+  padding: 10px;
+  margin: 10px 0;
+  background-color: #5f2db7;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  box-shadow: 0 0 10px rgb(155, 103, 235);
+  transition: 0.3s;
+}
+
+button:hover {
+  background-color: #7a42d6;
+  box-shadow: 0 0 10px rgb(155, 103, 235);
+  transition: 0.3s;
+}
+#add-product-form {
+  display: none;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+
+  background-color: #5f2db7;
+  border-radius: 10px;
+  margin-bottom: 50px;
+  display: flex;
+  flex-direction: column;
+
+  min-width: 40%;
+  height: 60%;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 0 30px   rgb(199, 178, 231);
+  overflow: hidden;
+}
+#add-product-form input {
+  margin: 1px;
+  width: 95%;
+  padding: 10px;
+  margin: 10px 0;
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  border: 2px solid rgba(255, 255, 255, 0.2);
+  border-radius: 8px;
+  color: black;
+  outline: none;
+  transition: 0.2s ease-in-out;
+}
+#add-product-form input:focus {
+  border-color: transparent;
+  background: rgba(255, 255, 255, 0.2);
+  animation: borderGlow 1.5s infinite linear;
+}
+@keyframes borderGlow {
+  0% {
+    box-shadow: 0 0 5px #5f2db7;
+  }
+  50% {
+    box-shadow: 0 0 15px #7a42d6;
+  }
+  100% {
+    box-shadow: 0 0 5px #5f2db7;
+  }
+}
+
+#remove-product-form {
+    display: none;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+
+    background-color: #5f2db7;
+    border-radius: 10px;
+    margin-bottom: 50px;
+    display: flex;
+    flex-direction: column;
+  
+    min-width: 40%;
+    height: 60%;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgb(199, 178, 231);
+    overflow: hidden;
+}
+#remove-product-form input {
+    margin: 1px;
+    width: 95%;
+    padding: 10px;
+    margin: 10px 0;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    border: 2px solid rgba(255, 255, 255, 0.2);
+    border-radius: 8px;
+    color: black;
+    outline: none;
+    transition: 0.2s ease-in-out;
+}
+.orders {
+  width: 100%
+}
+.user-details {
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+}
+.order {
+display: flex;
+justify-content: space-between;
+align-items: center;
+margin-top: 10px ;
+background-color: #ddd;
+height: 110%;
+border-radius: 15px;
+padding: 15px;
+}
+.item-holder {
+  margin-top: 50px;
+  padding: 20px;
+  border-radius: 15px;
+}
+hr {
+  width: 100%;
+}
+
+#dateSearch {
+  border-radius: 15px;
+  padding: 10px;
+  border: #5f2db7;
+  margin-left: 15px;
+}
+
+.prop {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 10px;
+  justify-content: space-between ;
+  align-items: center;
+}
+
+.hidden {
+  display: none; /* Initially hidden */
+}
+
+@media screen and (max-width: 600px) {
+ .order {
+  flex-direction: column;
+ }
+}

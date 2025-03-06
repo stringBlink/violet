@@ -1,0 +1,44 @@
+@import url("https://fonts.googleapis.com/css2?family=Cairo:wght@200..1000&family=Caveat:wght@400..700&family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+    color: black;
+    font-family: "Cairo", serif;
+    background-image: url(../images/pexels-micaasato-1082529.jpg);
+    background-repeat: no-repeat;
+    background-size:cover;
+}
+nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: auto;
+  /* background-color: #; */
+  padding: 20px;
+}
+nav img {
+  width: 60px;
+  height: 60px;
+  border-radius: 30px;
+}
+
+img{
+    width: 500px;
+}
+
+.add-holder {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    padding: 50px;
+    border-radius: 15px;
+    margin: 50px;
+    
+}

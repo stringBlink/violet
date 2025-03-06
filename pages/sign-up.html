@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>انشاء حساب</title>
+    <link rel="stylesheet" href="/assets/css/sign-up.css">
+    <link rel="stylesheet" href="/assets/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <a href="/pages/log-in.html"><i class="fa-solid fa-arrow-left" id="back-arrow"></i></a>
+
+        <h1>Sign up</h1>
+        
+        <form action="" id="sign-up-form">
+
+            <input type="text" placeholder="Username" required id="username" minlength="5" maxlength="20" title="Username must be between 5 and 20 characters">
+            <input type="email" placeholder="E-mail" required id="email" title="Please enter a valid email address">
+            <input type="password" placeholder="Password" id="password" required minlength="8" maxlength="20" title="Password must be between 8 and 20 characters">
+            <input type= "submit" value="Sign up" id="submit" class="button">
+            <p id="invalid-credintial" style="font-weight: 800; color: red;"></p>
+        </form>
+
+    </div>
+
+
+
+    <script src="/assets/js/sign-up.js" type="module"></script>
+    <script src="/assets/js/firebase-config.js" type="module"></script>
+
+    <!-- <script type="module" src="/assets/js/firebase-config.js"></script> -->
+</body>
+</html>

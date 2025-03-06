@@ -1,0 +1,367 @@
+@import url("https://fonts.googleapis.com/css2?family=Cairo:wght@200..1000&family=Caveat:wght@400..700&family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Jaini+Purva&display=swap");
+* {
+  font-family: "Cairo", serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: auto;
+  background-color: #5f2db7;
+}
+nav div {
+  padding: 10px 20px;
+}
+
+nav img {
+  width: 60px;
+  height: 60px;
+  border-radius: 30px;
+  /* box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.5); */
+}
+
+.left-side-nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.right-side-nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+#search {
+  margin-left: 20px;
+  padding: 10px;
+  border-radius: 10px;
+  border: none;
+  margin-right: 20px;
+  width: 200px;
+  transition: 0.3s;
+}
+
+#search:hover {
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.5);
+  transform: scaleX(1.1);
+}
+
+#cart-icon {
+  box-shadow: none;
+  border: none;
+  transition: 0.3s;
+}
+
+#cart-icon:hover {
+  transform: scale(1.1);
+}
+
+.services a:hover {
+  font-size: 1.5vw;
+}
+.services li ul {
+  transition: 0.3s;
+  width: 100px;
+}
+.services li ul:hover {
+  padding-right: 10px;
+}
+
+.services li {
+  list-style: none;
+  display: none;
+  background-color: #eee;
+  border-radius: 10px;
+  transition: 0.3s;
+  width: 190px;
+}
+
+.services li ul a {
+  color: black;
+  font-size: 15px;
+}
+.services li ul a:hover {
+  font-size: 15px;
+}
+
+.services:hover li {
+  position: absolute;
+  margin-left: -50px;
+  width: 130px;
+  height: 70px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.services:hover ul {
+display: flex;
+justify-content: center;
+align-items: center;
+}
+h1 {
+  font-weight: 800;
+}
+
+hr {
+  width: 80px;
+  border: 1px solid #5f2db7;
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 20px;
+  padding: 50px;
+}
+
+.right {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+h4 {
+  margin-left: 40px;
+  cursor: pointer;
+}
+
+.list {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.temporary {
+  align-self: flex-end;
+  width: 50px;
+  display: none;
+  transition: 0.3s;
+}
+.temporary-long {
+  align-self: flex-end;
+
+  display: none;
+  transition: 0.3s;
+}
+
+/* Dropdown Container */
+.sort {
+  list-style: none;
+  background-color: #f9f9f9;
+  width: 200px;
+  display: none;
+  border-radius: 10px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  padding: 5px 0;
+  position: absolute;
+  z-index: 10;
+  transition: all 0.3s ease-in-out;
+}
+
+/* Dropdown Items */
+.sort li {
+  padding: 12px 15px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  font-size: 16px;
+  color: #333;
+  border-radius: 10px;
+}
+
+/* Hover Effect */
+.sort li:hover {
+  background-color: #5f2db7;
+  color: white;
+  padding-left: 20px;
+}
+
+/* Show dropdown on hover (optional) */
+.sort-container:hover .sort {
+  display: block;
+}
+
+/* Smooth opening animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.sort {
+  animation: fadeIn 0.3s ease-in-out;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+  .sort {
+    width: 150px;
+  }
+
+  .sort li {
+    font-size: 14px;
+    padding: 10px;
+  }
+}
+
+.list:hover {
+  .temporary-long {
+    display: block;
+  }
+  .sort {
+    position: absolute;
+    top: 27%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+.bags-container {
+  padding: 50px;
+  display: grid;
+  grid-template-columns: repeat(
+    auto-fit,
+    minmax(300px, 1fr)
+  ); /* Fixed syntax */
+  grid-auto-rows: minmax(300px, auto); /* Controls row heights */
+  gap: 30px;
+}
+
+.product {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.5);
+  transition: 0.3s;
+  width: 300px;
+}
+
+.product:hover {
+  transform: scale(1.1);
+}
+
+.product-image {
+  width: fit-content;
+  height: fit-content;
+  height: 300px;
+  max-height: 300px;
+  padding: 0;
+  margin: 0;
+  background-size: cover;
+}
+
+.add-to-cart {
+  background-color: #5f2db7;
+  color: white;
+  padding: 10px;
+  border-radius: 10px;
+  border: none;
+  cursor: pointer;
+  transition: 0.3s;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.5);
+
+}
+.add-to-cart:hover {
+  background-color: #4a1d8c;
+  transform: scale(1.1);
+}
+
+
+/* Cart Dropdown */
+.cart-dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.cart-icon {
+    width: 50px;
+    cursor: pointer;
+}
+
+.cart-dropdown-content {
+    display: none;
+    position: absolute;
+    right: 0;
+    background-color: white;
+    min-width: 200px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    padding: 10px;
+    z-index: 100;
+    border-radius: 5px;
+}
+
+.cart-dropdown:hover .cart-dropdown-content {
+    display: block;
+}
+
+.cart-dropdown-content ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    max-height: 150px;
+    overflow-y: auto;
+}
+
+.cart-dropdown-content ul li {
+    padding: 5px 0;
+    border-bottom: 1px solid #ddd;
+}
+
+.cart-buttons {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+
+.cart-buttons button {
+    background-color: #ff6b6b;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    border-radius: 3px;
+    font-size: 14px;
+    width: 100px;
+}
+
+.cart-buttons button:hover {
+    background-color: #d9534f;
+}
+
+#checkout-cart {
+    background-color: #4CAF50;
+}
+
+#checkout-cart:hover {
+    background-color: #45a049;
+}
+

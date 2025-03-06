@@ -1,0 +1,92 @@
+    @import url("https://fonts.googleapis.com/css2?family=Cairo:wght@200..1000&family=Caveat:wght@400..700&family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Jaini+Purva&display=swap");
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+body{
+    font-family: "Cairo", serif;
+    background-image: linear-gradient(45deg, #5F2DB7, #7A42D6, #9B67EB);
+
+}
+.container {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    justify-content: center;
+    padding: 0 20px;
+    align-items: center;
+    height: 70%;
+    border-radius: 15px;
+    background-color: #eee;
+    box-shadow: 0 0 15px rgb(199, 178, 231);;
+
+}
+
+form input {
+    width: 60%;
+    padding: 10px;
+    margin: 10px 0;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    border: 2px solid rgba(0, 0, 0, 0.2);
+    border-radius: 8px;
+    color: black;
+    outline: none;
+    transition: 0.2s ease-in-out;
+}
+form input:focus {
+    border-color: transparent;
+    background: rgba(255, 255, 255, 0.2);
+    animation: borderGlow 1.5s infinite linear
+}
+@keyframes borderGlow {
+    0% { box-shadow: 0 0 5px #5F2DB7; }
+    50% { box-shadow: 0 0 15px #7A42D6; }
+    100% { box-shadow: 0 0 5px #5F2DB7; }
+}
+
+form button {
+    width: 60%;
+    padding: 10px;
+    margin: 10px 0;
+    background-color: #5F2DB7;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: 0 0 10px rgb(155, 103, 235);
+    transition: 0.3s;
+}
+button:hover {
+    background-color: #7A42D6;
+    box-shadow: 0 0 10px rgb(155, 103, 235);
+    transition: 0.3s;
+}
+
+label {
+    justify-self: flex-end;
+    
+}
+
+.cont{
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+

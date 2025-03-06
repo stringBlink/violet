@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>caps</title>
+    <link rel="stylesheet" href="/assets/css/cap.css">
+    <link rel="stylesheet" href="/assets/css/all.min.css">
+</head>
+<body>
+    <nav>
+        <div class="left-side-nav">
+            <div><a href="/index.html"><img src="/assets/images/logo.png" alt=""></a></div>
+
+        </div>
+ 
+        <div class="right-side-nav" id="right-side-nav">
+
+            
+            <div class="services">
+                <a href="#services-section">خدماتنا</a>
+                <li dir="rtl">
+                    <ul><a href="/pages/bag.html" dir="rtl">شنط</a></ul>
+                    <ul><a href="/pages/cap.html" dir="rtl">كابات</a></ul>
+                </li>
+
+            </div>
+        </div>
+    </nav>
+    <div class="container">
+        <div class="left">
+            <h1>Caps</h1>
+            <hr>
+        </div>
+        <div class="right">
+                    <div class="list">
+                    <h4>Sort By <i class="fa-solid fa-arrow-down" style="margin-left: 5px;"></i></h4>
+                    <hr class="temporary-long"> 
+                    <select id="sortPrice" class="sort">
+                        <option value="asc">Sort by Price: Low to High</option>
+                        <option value="desc">Sort by Price: High to Low</option>
+                    </select> 
+                    </div>
+        </div>
+    </div>
+    <div class="caps-container" id="cap-cont">
+
+    </div>
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/cloudinary-core/2.11.4/cloudinary-core-shrinkwrap.min.js"></script>
+    <script src="/assets/js/cap.js" type="module"></script>
+    <script src="/assets/js/firebase-config.js" type="module"></script>
+</body>
+</html>

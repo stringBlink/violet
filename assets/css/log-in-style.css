@@ -1,0 +1,139 @@
+@import url("https://fonts.googleapis.com/css2?family=Cairo:wght@200..1000&family=Caveat:wght@400..700&family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap");
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: "Cairo", serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-image: linear-gradient(45deg, #5F2DB7, #7A42D6, #9B67EB);
+    
+}
+
+
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-width: 40%; 
+    height: 60%;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgb(199, 178, 231);;
+    overflow: hidden;
+
+}
+form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 40px 0;
+    
+}
+
+form input {
+    width: 60%;
+    padding: 10px;
+    margin: 10px 0;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    border: 2px solid rgba(255, 255, 255, 0.2);
+    border-radius: 8px;
+    color: black;
+    outline: none;
+    transition: 0.2s ease-in-out;
+
+}
+form input:focus {
+    border-color: transparent;
+    background: rgba(255, 255, 255, 0.2);
+    animation: borderGlow 1.5s infinite linear
+}
+@keyframes borderGlow {
+    0% { box-shadow: 0 0 5px #5F2DB7; }
+    50% { box-shadow: 0 0 15px #7A42D6; }
+    100% { box-shadow: 0 0 5px #5F2DB7; }
+}
+
+form a {
+    text-decoration: none;
+    color: #5F2DB7;
+    font-weight: bold;
+    align-self: flex-start;
+    margin-left: 20%;
+}
+
+button {
+    width: 60%;
+    padding: 10px;
+    margin: 10px 0;
+    background-color: #5F2DB7;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: 0 0 10px rgb(155, 103, 235);
+    transition: 0.3s;
+}
+
+button:hover {
+    background-color: #7A42D6;
+    box-shadow: 0 0 10px rgb(155, 103, 235);
+    transition: 0.3s;
+}
+
+a {
+    text-decoration: none;
+    font-weight: bold;
+}
+
+a:focus {
+    color: #5F2DB7;
+}
+
+a:visited {
+    color: #5F2DB7;
+}
+
+a:active {
+    color: #5F2DB7;
+}
+
+@media only screen and (max-width: 600px) {
+    .container {
+        min-width: 80%;
+    }
+    form input {
+        width: 80%;
+    }
+    form a {
+        margin-left: 10%;
+    }
+    button {
+        width: 80%;
+    }
+}
+
+@media only screen and (min-width: 601px) and (max-width: 1000px) {
+    .container {
+        min-width: 60%;
+    }
+    form input {
+        width: 70%;
+    }
+    form a {
+        margin-left: 15%;
+    }
+    button {
+        width: 70%;
+    }
+}
